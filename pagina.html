@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        img {
+            width: 100%;
+        }
+
+        body {
+            background-color: aliceblue;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            /* Podés visitar: https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Flexbox#el_modelo_flexible para entender el modelo Flexbox */
+            display: flex;
+            /* Establece el contenedor como un contenedor flex */
+            flex-wrap: wrap;
+            /* Permite que los elementos se envuelvan en líneas adicionales si no hay suficiente espacio */
+            justify-content: center;
+            /* Centra los elementos a lo largo del eje principal horizontal */
+            align-items: center;
+            /* Centra los elementos a lo largo del eje secundario vertical */
+            background-color: gainsboro;
+            margin: 0 50px;
+            /* Margen a la derecha y a la izquierda. El valor 0 es para el margen superior e inferior */
+
+        }
+
+        header {
+            display: flex;
+            /* Establece el encabezado como un contenedor flex */
+            align-items: baseline;
+            /* Alinea los elementos del encabezado a lo largo de la línea de base */
+            justify-content: space-between;
+            /* Distribuye los elementos del encabezado de manera uniforme a lo largo del eje principal horizontal */
+            padding: 25px;
+        }
+
+        .container-title {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container-image {
+            text-align: center;
+            margin-bottom: 20px;
+            width: 60px;
+        }
+        .container-image:hover{
+            
+        }
+
+        .box {
+            width: 300px;
+            padding: 20px;
+            background-color: ghostwhite;
+            margin: 10px;
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+        }
+
+
+        #enlaces img {
+            width: 30px;
+        }
+
+        #enlaces {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        #final {
+            text-align: center;
+        }
+        .contenedor {
+  position: relative;
+  height: 290px;
+  width: 290px;
+  margin: 50px 20px;
+  float: left;
+}
+
+.contenedor img {
+  position: absolute;
+  left: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.contenedor img.top:hover {
+  opacity: 0;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container-image">
+            <img src="assets/logo.png" alt="logo1">
+        </div>
+        <nav>
+            <ul>
+                <li> <a href="#">Destacados</a> </li>
+                <li> <a href="#">Hombre</a></li>
+                <li> <a href="#">Mujer</a></li>
+                <li> <a href="#">Sale</a></li>
+            </ul>
+
+        </nav>
+        <div>
+            <h3 class="container-title">Nike</h3>
+        </div>
+    </header>
+    <main class="container">
+        <div class="box">
+              <div class="contenedor">
+                <img src="assets/nikem1.webp" />
+                <img class="top" src="assets/nike12.webp" />
+            </div>
+            <h3>Nike Zoom Mercurial Superfly 9 Elite XXV FG</h3>
+            <p>Botines de Pasto Natural Unisex</p>
+            <p>Rinde homenaje al 25 aniversario de uno de nuestros calzados más rápidos jamás creados con el Superfly 9
+                Elite XXV. Los colores icónicos de la línea Mercurial complementan los toques históricos de este modelo.
+                El impresionante efecto cromado agrega aún más electricidad a este modelo relámpago con Zoom Airs</p>
+            <a href="#">Comprar</a>
+        </div>
+        <div class="box">
+            <div class="contenedor">
+                <img src="assets/nikem2.webp" />
+                <img class="top" src="assets/nike21.webp" />
+            </div>
+            <h3>Nike Zoom Mercurial Vapor 15 Elite XXV FG</h3>
+            <p>Botines de Pasto Natural Unisex</p>
+            <p>Rinde homenaje al 25 aniversario de uno de nuestros calzados más rápidos jamás creados con el Vapor 15
+                Elite XXV. Los colores icónicos de la línea Mercurial complementan los toques históricos de este modelo.
+                El impresionante efecto cromado agrega aún más electricidad a este modelo relámpago con Zoom Airs</p>
+            <a href="#">Comprar</a>
+        </div>
+        <div class="box">
+            <div class="contenedor">
+                <img src="assets/nikem3.webp" />
+                <img class="top" src="assets/nike31.webp" />
+            </div>
+            <h3>Nike Zoom Mercurial Superfly 9 Elite FG</h3>
+            <p>Botines de Pasto Natural Unisex</p>
+            <p>Celebra la competencia más grande de fútbol con un diseño impulsado por la ciencia de la conectividad y
+                la gravedad que inspira el escenario mundial. La placa cromada en fibra de carbono complementa un look
+                futurista increíble hecho para los pies de los mejores jugadores del mundo. Equipado con unas</p>
+            <a href="#">Comprar</a>
+        </div>
+        <div class="box">
+            <div class="contenedor">
+                <img src="assets/nikem4.webp" />
+                <img class="top" src="assets/nike41.webp" />
+            </div>
+            <h3>Nike Gripknit Phantom GX Elite Fusion FG</h3>
+            <p>Botines de Pasto Natural Unisex</p>
+            <p>¿Te obsesiona perfeccionar tu arte? Diseñamos el calzado Elite para ti y para las estrellas más grandes
+                del mundo, para así poder brindarte calidad de alto nivel, porque exiges lo mejor de ti mismo y de tu
+                calzado también. Confeccionado con el revolucionario Nike Gripknit, este calzado proporciona un mejor
+            </p>
+            <a href="#">Comprar</a>
+        </div>
+    </main>
+</body>
+<footer>
+    <p id="final">©Todos los derechos reservados Nike</p>
+    <p id="final">Benjamin Lopez 4*3</p>
+    <ul id="enlaces">
+        <li><a class="link2" href="#"> <img src="assets/facebook.png" alt="Link al facebook"></a></li>
+        <li><a class="link2" href="#"><img src="assets/instagram.png" alt="Link del Instagram"></a></li>
+        <li><a class="link2" href="#"><img src="assets/tiktok.png" alt="Link del tiktok"></a></li>
+    </ul>
+</footer>
+
+</html>
